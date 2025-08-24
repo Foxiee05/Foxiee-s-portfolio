@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Kode Mono';
+  src: url('KodeMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitcount';
+  src: url('Bitcount-SemiBold.ttf') format('truetype');
+}
+
+
+:root{
+/* FONTS */
+--title-font: 'Bitcount', sans-serif;
+--content-font: 'Kode Mono', monospace;
+
+/* COLORS */
+--green:#93cf4a;
+--red:#d72f00;
+--blue:#3c9dff;
+--yellow:#ffd753;
+--orange: #ff8f5c;
+--white:#f6f6ff;
+
+/* FONT SIZES */
+--content-font-size-desktop: clamp(2rem,1.563vw,2.5rem);
+--lessjumbo-title-font-size-desktop: clamp(5rem,13vw,18rem);
+--title-font-size-desktop: clamp(5rem,4vw,10rem);
+
+--lessjumbo-title-font-size-desktop1920: clamp(9rem,13vw,13rem);
+/*title 1920 screen clamp(12rem,7.813vw,13rem) */
+
+--content-font-size-laptop: clamp(1.75rem, 1.667vw,2.25rem);
+
+
+--lessjumbo-title-font-size-laptop1440less: clamp(9rem,12vw,13rem);
+--title-font-size-laptop1440less: clamp(2rem,4vw,4rem);
+--content-font-size-laptop1440less: clamp(1.25rem, 1.667vw, 2rem);
+
+
+--lessjumbo-title-font-size-laptop1024less: clamp(6rem,10.938vw,8rem);
+--content-font-size-tablet1024less: clamp(1rem,2.344vw,1.5rem);
+
+--lessjumbo-title-font-size-mobile500less:clamp(5rem,23vw,18rem);
+--title-font-size-mobile500less:clamp(1rem,6vw,3rem);
+
+
+--footer-font-size-desktop: clamp(1.5rem,1.063vw,1.8rem);
+--footer-font-size-laptop: clamp(1.25rem,1.25vw,1.6rem);
+
+}
+
+
+body{
+  background: url(DesignPage/Design-background-pattern.svg), url(Background.svg) fixed repeat center/cover;
+}
+
+body img{
+  width:100%;
+  height:auto;
+}
+
+body video{
+  width: 80%;
+  height:auto;
+  position: relative;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+.one-video{
+  width:90%;
+  left:50vw;
+  transform: translateX(-51%) translateY(-50%);
+  top:50vh;
+}
+
+.button{
+  font-family: var(--content-font);
+  font-size: var(--content-font-size-desktop);
+  text-align: center;
+  position: relative;
+  padding:2rem;
+  margin:0;
+  color:var(--white);
+  background-color: var(--blue);
+  border: solid 0.5rem var(--green); 
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.button:hover{
+  filter: drop-shadow(0 0 20px var(--green));
+}
+
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles-narrative.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Narrative</title>
+    <script src="script-illustration.js"></script> 
+
+    <!-- LIBRARY INSTALLATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--aos-->
+  </head> 
+
+  <body>
+    <!--  DESKTOP HEADER -->
+      <div class="header">
+        <a id="Home" href="index.html#cover-page">Home</a>
+        <a id="About-me" href="foxiee.html">About me</a>
+        <a id="Works" href="index.html#works-page">Works</a>
+        <img src="CoverPage/drag-header.svg" alt="drag-header" id="drag-header">
+      </div>
+     
+      <!-- MOBILE HEADER -->
+      <div class="header-mobile">
+        <a id="Home-mobile" href="index.html#cover-page">Home</a>
+        <a id="About-me-mobile" href="foxiee.html">About me</a>
+        <a id="Works-mobile" href="index.html#works-page">Works</a>
+      </div>
+
+      <div class="side-pattern" id="left">
+        <img src="Elements/square-pattern-side.svg">
+      </div>
+
+      <div class="side-pattern" id="right">
+        <img src="Elements/square-pattern-side.svg">
+      </div>
+
+      <div class="one-page">
+        <h1>
+          I <span class="blue-span-title">T</span><span class="orange-span-title">E</span>L<span class="green-span-title">L</span> S<span class="orange-span-title">T</span><span class="blue-span-title">O</span><span class="green-span-title">R</span>I<span class="orange-span-title">E</span><span class="blue-span-title">S</span>
+        </h1>
+
+        <div class="content-flex">
+
+          <div class="content" data-aos="zoom-in">
+            <h2>TON KHO</h2>
+            <a class="circle" id="ton-kho-image" href="Ton-kho.html" target="_blank"></a>
+            <a class="button" href="Ton-kho.html" target="_blank">Learn more!</a>
+          </div>
+
+          <div class="content" data-aos="zoom-in">
+            <h2>Updating...</h2>
+            <a class="circle" id="updating"></a>
+            <!-- <a class="button">Learn more!</a> -->
+          </div>
+
+
+        </div>
+      </div>
+
+
+     <!-- APPEAR ON SCROLL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!--TIPPY JS-->
+       <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+       <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+       <!-- TIPPY TOOL TIP (HOVER DESCRIPTION)-->
+        <script>
+        tippy('.circle', {
+          content: 'Click to know the details!',
+          arrow: false,
+          followCursor:true,
+          animation: 'bigger',
+          placement: 'top',
+          onCreate(instance) {
+            instance.popper.querySelector('.tippy-box').style.backgroundColor = 'var(--blue)';
+            instance.popper.querySelector('.tippy-box').style.color = 'var(--white)';
+            instance.popper.querySelector('.tippy-box').style.fontFamily = 'var(--content-font)';
+            instance.popper.querySelector('.tippy-box').style.fontSize = '1.25rem';
+            instance.popper.querySelector('.tippy-box').style.textAlign = 'center';
+            instance.popper.querySelector('.tippy-box').style.borderRadius = '2rem';
+
+           }
+          });
+       </script>
+      
+     
+  </body>
+
+  <footer>
+      <p class="footer-text">Last update 25/8/2025</p>
+      <img src="Elements/footer-decor.svg" class="footer-decor">
+  </footer>
+
+</html>

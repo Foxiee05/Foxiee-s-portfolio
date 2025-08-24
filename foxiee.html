@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles-foxiee.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About Me</title>
+    <script src="script-foxiee.js"></script>
+
+    <!--LIBRARY INSTALLATION-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--aos-->
+     
+
+  </head> 
+
+  <body>
+    <!--  DESKTOP HEADER -->
+      <div class="header">
+        <a id="Home" href="index.html#cover-page">Home</a>
+        <a id="About-me" href="foxiee.html">About me</a>
+        <a id="Works" href="index.html#works-page">Works</a>
+        <img src="CoverPage/drag-header.svg" alt="drag-header" id="drag-header">
+      </div>
+     
+      <!-- MOBILE HEADER -->
+      <div class="header-mobile">
+        <a id="Home-mobile" href="index.html#cover-page">Home</a>
+        <a id="About-me-mobile" href="foxiee.html">About me</a>
+        <a id="Works-mobile" href="index.html#works-page">Works</a>
+      </div>
+
+      <div class="one-page">
+        <!-- FIXED PAGE -->
+         <div class="text-boxes">
+          <p id=first-box class="lax lax_preset_zigzag:200:73">As a junior designer, I have daily urge to step out of my safe zone and exploring new creative challenges.</p>
+
+          <p id=second-box class="lax lax_preset_zigzag:161:56">I can use any software if I’m given the time to learn. I love learning!</p>
+
+          <p id=third-box class="lax lax_preset_zigzag:142:36">You can contact me through my mail: <span class="content-emphasize">nguyenhothaianh@gmail.com</span></p>
+
+          <p id=fourth-box class="lax lax_preset_zigzag:127:54">Fun-fact: I have emotional connection with <span class="content-emphasize-white">seals</span></p>
+
+          <img src="Foxiee/siu.svg" id="siu" class="lax lax_preset_spin:255:242">
+         </div>
+
+        <img src="Elements/spiki-yellow.svg" id="spiki-yellow">
+        <img src="Foxiee/pinhi-red.svg" id="pinhi-red">
+        <img src="Foxiee/arrow.svg" id="arrow">
+        <img src="Foxiee/pinhi-blue.svg" id="pinhi-blue">
+        <img src="Foxiee/cek.svg" id="cek">
+        <img src="Foxiee/bro-happy.svg" id="bro-happy">
+        <img src="Elements/red-flower.svg" id="red-flower">
+        <img src="Elements/yellow-flower.svg" id="yellow-flower">
+        <img src="Elements/grass.svg" id="grass1">
+        <img src="Elements/grass.svg" id="grass2">
+        <img src="Elements/grass.svg" id="grass3">
+
+        
+        <p class="jumbo-title">
+          WH<span class="blue-span-title">O</span>
+          <br>
+          &nbsp;&nbsp;&nbsp;<span class="orange-span-title">I</span><span class="green-span-title">S</span>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;F<span class="blue-span-title">O</span>X<span class="orange-span-title">I</span><span class="green-span-title">E</span><span class="blue-span-title">E</span>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?<span class="green-span-title">?</span><span class="blue-span-title">?</span><span class="orange-span-title">?</span><span class="blue-span-title">?</span>?<span class="orange-span-title">?</span>?<span class="blue-span-title">?</span><span class="green-span-title">?</span>?
+        </p>
+
+        <p class="jumbo-title-mobile">
+          WH<span class="blue-span-title">O</span>
+          <br>
+          <span class="orange-span-title">I</span><span class="green-span-title">S</span>
+          <br>
+          F<span class="blue-span-title">O</span>X<span class="orange-span-title">I</span><span class="green-span-title">E</span><span class="blue-span-title">E</span>
+          <br>
+          ?<span class="green-span-title">?</span><span class="blue-span-title">?</span><span class="orange-span-title">?</span><span class="blue-span-title">?</span>?<span class="orange-span-title">?</span>?<span class="blue-span-title">?</span><span class="green-span-title">?</span>?
+        </p>
+
+        <div class="white-background"></div>
+
+        <div class="glitter" id="yellow-glitter"></div>
+        <div class="glitter" id="green-glitter"></div>
+        <div class="glitter" id="blue-glitter"></div>
+ 
+        <!-- GRAINY TEXTURE PLEASE APPLY ALL PAGES, Z-INDEX: -2 -->
+        <img src="Elements/texture.png" class="texture">
+       <!-- GRAINY TEXTURE PLEASE APPLY ALL PAGES, Z-INDEX: -2 -->
+      </div>
+
+
+
+    
+    <!-- APPEAR ON SCROLL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    
+    <!--LAX JS INSTALL-->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script> 
+
+    <!-- PARRALAX EFFECT -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+
+    <!-- FUN ANIMATION -->
+     <script>
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
+     </script>
+
+  </body>
+
+  <footer>
+      <p class="footer-text">Last update 25/8/2025</p>
+      <img src="Elements/footer-decor.svg" class="footer-decor">
+  </footer>
+
+</html>

@@ -1,0 +1,68 @@
+#loading-screen{
+  width:100vw;
+  height:100vh;
+  background-color: #93cf4a;
+  background: url(loading-bg.png), url(loading-bg-fill.png);
+  position: fixed;
+  z-index: 100;
+
+ animation: disappear 3s ease-out;
+ animation-fill-mode: forwards;
+}
+
+#loading-screen img{
+  width:20vw;
+  height: auto;
+  position: absolute;
+  left:50vw;
+  top:50vh;
+  animation: loading 2s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@keyframes loading{
+  0%{
+    transform: rotate(-15deg) translate(-50%, -50%);
+  }
+
+  50%{
+    transform: rotate(15deg) translate(-50%, -50%);
+  }
+
+  100%{
+    transform: rotate(-15deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes disappear{
+  0%{
+    opacity: 100%;
+  }
+
+  80%{
+    opacity: 100%;
+  }
+
+  90%{
+    opacity:0%
+  }
+
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+
+@media  screen and (max-width:1400px) and (orientation: portrait) {
+  #loading-screen img{
+    width:40vw;
+  }
+  
+}
+
+@media  screen and (max-width:500px) and (orientation: portrait) {
+  #loading-screen img{
+    width:60vw;
+  }
+  
+}

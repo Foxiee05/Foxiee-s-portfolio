@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="illust-works.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> Portfolio Illusts</title>
+
+    <!-- LIBRARY INSTALLATION -->
+    <script src="packery.pkgd.min.js"></script><!--packery-->
+    <script src="script-illustration.js"></script> 
+
+  </head>
+
+  <body>
+    <!--  DESKTOP HEADER -->
+      <div class="header">
+        <a id="Home" href="index.html#cover-page">Home</a>
+        <a id="About-me" href="foxiee.html">About me</a>
+        <a id="Works" href="index.html#works-page">Works</a>
+        <img src="CoverPage/drag-header.svg" alt="drag-header" id="drag-header">
+      </div>
+     
+      <!-- MOBILE HEADER -->
+      <div class="header-mobile">
+        <a id="Home-mobile" href="index.html#cover-page">Home</a>
+        <a id="About-me-mobile" href="foxiee.html">About me</a>
+        <a id="Works-mobile" href="index.html#works-page">Works</a>
+      </div>
+
+      <div>
+        <h1>OTHER WORKS</h1>
+
+        <div class="grid-container">
+          <div class="grid">
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/miku.png"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/meringle.png"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/natori.png"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/omori.png"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/who-are-you.png"> </div>
+
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/art1.PNG"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/art2.PNG"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/art3.PNG"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/art4.PNG"> </div>
+
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/comm1.PNG"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/comm2.PNG"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/comm3.PNG"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/comm4.PNG"> </div>
+
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/hange.PNG"> </div>
+        
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/voca1.PNG"> </div>
+        <div class="grid-item"><img src="IllustrationPage/Personal-works/voca2.PNG"> </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var grid = document.querySelector('.grid');
+        var pckry = new Packery(grid, {
+          itemSelector: '.grid-item',
+          gutter: 10,
+          percentPosition: true
+        });
+        
+        // Make sure images are loaded before layout
+        imagesLoaded(grid, function() {
+          pckry.layout();
+        });
+        
+        // Re-layout on window resize
+        window.addEventListener('resize', function() {
+          pckry.layout();
+        });
+      });
+    </script>
+    
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+  </body>
+
+  <footer>
+      <p class="footer-text">Last update 25/8/2025</p>
+      <img src="Elements/footer-decor.svg" class="footer-decor">
+  </footer>
+
+</html>
